@@ -2,7 +2,7 @@
 FROM tomcat:9.0
 
 
-COPY target/kendra_demo.war /usr/local/tomcat/webapps/
+COPY target/demo.war /usr/local/tomcat/webapps/
 
 
 EXPOSE 8081
