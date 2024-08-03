@@ -1,39 +1,20 @@
+<%@ page import="org.slf4j.Logger" %>
+<%@ page import="org.slf4j.LoggerFactory" %>
+<%
+    Logger logger = LoggerFactory.getLogger("IndexJSP");
+    logger.info("index.jsp page accessed");
+%>
+<html>
+<body>
+<h1><center> Welcome to my Webapp </center></h1><br><br>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>User Details</title>
-</head>
-<body >
-<h2 style="text-align: center">User Details</h2>
-<h3>Fill in the Form</h3>
-
-<form action="info" method="post">
-    <table>
-
-        <tr>
-            <td>ID:</td>
-            <td><input type="text" name="id" /></td>
-        </tr>
-        <tr>
-            <td>First Name:</td>
-            <td><input type="text" name="firstname" /></td>
-        </tr>
-
-        <tr>
-            <td>Last Name:</td>
-            <td><input type="text" name="lastname" /></td>
-        </tr>
-
-
-    </table>
-
-    <br> <input type="submit" value="Submit Details"><br>
-
-    <p>Ahirwe Rutayisire tesi kendra_25526</p>
-
+<h1><center> Fill in student information</center></h1><br><br>
+<form action="hello-servlet" method="post">
+    <center>
+        Enter your name : <input type="text" name="stuname"><br><br>
+        Enter your ID : <input type="text" name="stid"><br><br>
+        <input type="submit">
+    </center>
 </form>
-
 </body>
 </html>
